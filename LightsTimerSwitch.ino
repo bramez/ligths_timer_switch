@@ -16,19 +16,10 @@ const byte lights_pin = 9;
 
 
 void setup() {
-
 	pinMode(button_pin, INPUT);
 	pinMode(lights_pin, OUTPUT);
 
 	switch_lights_off();
-
-	digitalWrite(lights_pin, LOW);
-
-	Serial.begin(115200);
-	Serial.println("Starting serial port");
-	Serial.flush();
-
-	delay(100);
 }
 
 void start_lights_timer(unsigned long timeout) {
